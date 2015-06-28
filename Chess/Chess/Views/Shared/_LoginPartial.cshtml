@@ -1,13 +1,13 @@
 ﻿@Html.AntiForgeryToken()
-@using (Html.BeginForm(null, null, FormMethod.Post, new {id = "logoutForm", @class = "navbar-right"}))
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            @Html.ActionLink("Здравствуй, Gremlin!", null, null, htmlAttributes: new {title = "Manage", @class = "greating"})
-        </li>
-    </ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li>
+			@Html.ActionLink("Здравствуй, Gremlin!", null, null, htmlAttributes: new { title = "Manage", @class = "greating" })
+		</li>
+	</ul>
 }
 <ul class="nav navbar-nav navbar-right">
-    <li>@Html.ActionLink("Зарегистрироваться", null, null, null, htmlAttributes: new { id = "registerLink" })</li>
-    <li>@Html.ActionLink("Войти", null, null, null, htmlAttributes: new { id = "loginLink" })</li>
+	<li>@Html.ActionLink("Зарегистрироваться", null, null, null, htmlAttributes: new { id = "registerLink" })</li>
+	<li>@Html.ActionLink("Войти", null, null, null, htmlAttributes: new { id = "loginLink" })</li>
 </ul>
