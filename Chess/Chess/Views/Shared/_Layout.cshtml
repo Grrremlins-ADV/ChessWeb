@@ -4,18 +4,21 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>@ViewBag.Title</title>
-	@Styles.Render("~/css")
+		@Styles.Render("~/css")
+		@Styles.Render("~/Chess/css")
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".side-bar"></button>
+	<div id="header" class="navbar navbar-inverse navbar-fixed-top" style="position: relative;">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".greeting-collapse-class">
-				</button>
 				@Html.ActionLink("Chess", "Index", "Home", null, new { @class = "navbar-brand" })
 			</div>
-			@Html.Partial("_LoginPartial")
+			<div class="greeting-collapse-class navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+				</ul>
+				@Html.Partial("_LoginPartial")
+			</div>
 		</div>
 	</div>
 	@RenderBody()

@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNet.Identity
+@model Chess.Models.ChessFieldModel
+@{
+	ViewBag.Title = "ChessField";
+}
+<div class="container body-content">
+	<h2>Hey, Gremlin!</h2>
+	<h2>``Here will be future amazing game``</h2>
+	@{
+
+		var userName = "";
+		userName = Request.IsAuthenticated ? User.Identity.GetUserName() : "Unknown";
+	}
+	<h2>@userName, You play with... @Model.OpponentName!</h2>
+</div>
