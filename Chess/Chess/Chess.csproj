@@ -161,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\StartupAuth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ChessEngineTests.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -302,6 +303,12 @@
     <EmbeddedResource Include="Migrations\201506282124584_InitialCreate.resx">
       <DependentUpon>201506282124584_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SrcChess2\SrcChess2.csproj">
+      <Project>{03a60417-80e2-4587-817d-1c581427e2b1}</Project>
+      <Name>SrcChess2</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Chess.Models;
+using SrcChess2;
+
+using SrcChess2.Properties;
 
 namespace Chess.Controllers
 {
