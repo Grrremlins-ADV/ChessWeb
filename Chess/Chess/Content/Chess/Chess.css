@@ -6,3 +6,9 @@
     margin-right: 25%;
     width: 50%;
 }
+
+#field {
+    display: block;
+    background: #333;
+    margin: 70px auto 30px;
+}

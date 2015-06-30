@@ -12,4 +12,8 @@
 		userName = Request.IsAuthenticated ? User.Identity.GetUserName() : "Unknown";
 	}
 	<h2>@userName, You play with... @Model.OpponentName!</h2>
+	<canvas id="field"></canvas>
+	@section Scripts {
+		@Scripts.Render("~/Scripts/Canvas/field.js");
+	}
 </div>

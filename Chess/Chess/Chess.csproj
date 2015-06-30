@@ -177,6 +177,8 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\GameModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Content\pole.jpg" />
+    <Content Include="Scripts\Canvas\field.js" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
