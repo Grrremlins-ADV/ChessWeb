@@ -1,0 +1,10 @@
+﻿@model Chess.Models.ChessFieldModel
+
+@{
+	ViewBag.Title = "title";
+}
+<div>
+	@Html.Partial("ChessField", @Model);	@section Scripts {
+		@Scripts.Render("~/bundles/canvas");
+	}
+</div>

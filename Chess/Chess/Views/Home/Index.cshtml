@@ -6,11 +6,14 @@
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-md-6">
-				<h2>Hi, Gremlins! What a lovely day!</h2>
+				<h2>Hi, Gremlin! What a lovely day!</h2>
 			</div>
 		</div>
 	</div>
 	<img src="~/Content/chess.png">
-	<a class="btn btn-default play-button" href="@Url.Action("ChessField", "Game")">Play</a>
+	<div class="btn-group" role="group">
+		<a class="btn btn-default" href="@Url.Action("StartGameWithPlayer", "Game")">Найти игру с другим игроком</a>
+		<a class="btn btn-default" href="@Url.Action("StartGameWithBot", "Game")">Тренироваться с гремлином</a>
+	</div>
 
 </div>

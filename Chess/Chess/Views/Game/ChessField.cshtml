@@ -12,8 +12,9 @@
 		userName = Request.IsAuthenticated ? User.Identity.GetUserName() : "Unknown";
 	}
 	<h2>@userName, You play with... @Model.OpponentName!</h2>
+	<a rel="stylesheet" href="http://www.codeproject.com/Articles/36112/Chess-Program-in-C"> Chess engine created by </a>
 	<canvas id="field"></canvas>
-	@section Scripts {
-		@Scripts.Render("~/Scripts/Canvas/field.js");
-	}
+	<div id="SendField" data-url='@Url.Action("SendField", "Game")'>
+		<button class="btn btn-primary" onclick="sendField('hello, ajax!')">Test ajax button (only for authorize users! see controller)</button>
+	</div>
 </div>

@@ -167,6 +167,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DataContexts\ChessDb.cs" />
     <Compile Include="DbCreationTest.cs" />
+    <Compile Include="GameMaster\Game.cs" />
+    <Compile Include="GameMaster\Master.cs" />
+    <Compile Include="GameMaster\GameStorageCleaner.cs" />
+    <Compile Include="GameMaster\Players.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -259,6 +263,7 @@
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Canvas\fieldSender.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -292,6 +297,8 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Game\ChessField.cshtml" />
+    <Content Include="Views\Game\StartGameWithPlayer.cshtml" />
+    <Content Include="Views\Game\StartGameWithBot.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
