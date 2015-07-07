@@ -182,6 +182,11 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\GameModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Content\Bishop_White.gif" />
+    <Content Include="Content\Bishop_White.jpg" />
+    <Content Include="Content\board.png" />
+    <Content Include="Content\board2.jpg" />
+    <Content Include="Content\board2.png" />
     <Content Include="Content\pole.jpg" />
     <Content Include="Scripts\Canvas\field.js" />
     <Compile Include="Startup.cs" />
