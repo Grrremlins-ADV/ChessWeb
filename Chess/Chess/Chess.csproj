@@ -166,9 +166,15 @@
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DataContexts\ChessDb.cs" />
+    <Compile Include="DataContexts\SaveGameRepo.cs" />
+    <Compile Include="Migrations\201507191849228_AddSaveGames.cs" />
+    <Compile Include="Migrations\201507191849228_AddSaveGames.Designer.cs">
+      <DependentUpon>201507191849228_AddSaveGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SaveGame.cs" />
     <Compile Include="DbCreationTest.cs" />
     <Compile Include="GameMaster\Game.cs" />
-    <Compile Include="GameMaster\Master.cs" />
+    <Compile Include="GameMaster\ChessMaster.cs" />
     <Compile Include="GameMaster\GameStorageCleaner.cs" />
     <Compile Include="GameMaster\Players.cs" />
     <Compile Include="Global.asax.cs">
@@ -314,6 +320,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201506282124584_InitialCreate.resx">
       <DependentUpon>201506282124584_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507191849228_AddSaveGames.resx">
+      <DependentUpon>201507191849228_AddSaveGames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

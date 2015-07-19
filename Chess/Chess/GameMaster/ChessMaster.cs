@@ -8,12 +8,12 @@ using SrcChess2;
 
 namespace Chess.GameMaster
 {
-	public class Master
+	public class ChessMaster
 	{
 		private readonly Dictionary<Players, Game> gameStorage;
 		private readonly HashSet<string> users;
 
-		public Master()
+		public ChessMaster()
 		{
 			users = new HashSet<string>();
 			gameStorage = new Dictionary<Players, Game>();

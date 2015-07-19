@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Chess.Migrations;
+using Chess.Models;
 
 namespace Chess.DataContexts
 {
@@ -14,5 +15,7 @@ namespace Chess.DataContexts
 		{
 			Database.SetInitializer(new MigrateDatabaseToLatestVersion<ChessDb, Migrations.Configuration>());
 		}
+
+		public DbSet<SaveGame> SaveGames;
 	}
 }

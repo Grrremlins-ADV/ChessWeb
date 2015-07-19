@@ -24,6 +24,13 @@ namespace Chess.Migrations
 			var roleManager = new RoleManager<IdentityRole>(roleStore);
 			roleManager.Create(new IdentityRole(LmsRoles.User));
 			roleManager.Create(new IdentityRole(LmsRoles.Admin));
+			if (!context.Users.Any(u => u.UserName == "Gremlin"))
+			{
+				var userStore = new UserStore<IdentityUser>();
+				var manager = new UserManager<IdentityUser>(userStore);
+				var user = new IdentityUser { UserName = "Gremlin" };
+				manager.Create(user, "asdasd");
+			}
 			if (!context.Users.Any(u => u.UserName == "user"))
 			{
 				var userStore = new UserStore<IdentityUser>();
